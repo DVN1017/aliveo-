@@ -24,11 +24,4 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Erreur envoi email" }, { status: 500 });
   }
 }
-```
 
-Sauvegarde.
-
----
-
-Dernière étape — crée un fichier `.env.local` à la racine du projet et colle :
-```
