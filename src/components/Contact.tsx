@@ -3,7 +3,7 @@ import { useState } from "react";
 
 type Status = "idle" | "loading" | "success" | "error";
 
-const WHATSAPP = "22600000000";
+const WHATSAPP = "22669064476";
 const WA_TEXT = encodeURIComponent("Bonjour, je souhaite un audit SEO gratuit pour mon site.");
 
 export default function Contact() {
