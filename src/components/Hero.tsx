@@ -29,7 +29,9 @@ export default function Hero() {
           </div>
         </div>
         <div className="relative max-w-xl w-full mx-auto pt-10 md:pt-16">
-          <div className="absolute inset-x-8 top-0 h-64 md:h-80 overflow-hidden rounded-[2rem] pointer-events-none" style={{ background: "radial-gradient(ellipse at 50% 20%, rgba(250,204,21,0.18), rgba(17,17,20,0.12) 48%, transparent 78%)" }} />
+          <div className="absolute inset-x-8 top-0 h-64 md:h-80 overflow-hidden rounded-[2rem] pointer-events-none">
+            <img src="https://raw.githubusercontent.com/DVN1017/aliveo/main/veylan-portrait.png" alt="" aria-hidden="true" className="h-full w-full object-cover object-[center_28%] opacity-70" style={{ maskImage: "linear-gradient(to bottom, black 30%, transparent 100%)", WebkitMaskImage: "linear-gradient(to bottom, black 30%, transparent 100%)" }} />
+          </div>
           <div className="absolute -inset-4 rounded-[2rem] blur-2xl pointer-events-none" style={{ background: "rgba(250,204,21,0.08)" }} />
           <div className="relative rounded-[1.75rem] border p-5 md:p-7 overflow-hidden mt-20 md:mt-28" style={{ background: "linear-gradient(145deg, rgba(27,27,32,0.94), rgba(16,16,19,0.97))", borderColor: "#33333a", backdropFilter: "blur(8px)" } }>
             <div className="flex items-center justify-between mb-8">
