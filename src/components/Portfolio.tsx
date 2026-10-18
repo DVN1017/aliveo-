@@ -10,7 +10,7 @@ const projects = [
   {
     name: "FlexiSave",
     category: "Produit web · Finance personnelle",
-    description: "Une interface web dédiée à une expérience d'épargne et de gestion financière simple.",
+    description: "Une interface web dédiée à une expérience d&apos;épargne et de gestion financière simple.",
     url: "https://flexisave.vercel.app/",
     label: "Voir le projet",
     number: "02",
