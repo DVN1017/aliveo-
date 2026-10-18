@@ -39,7 +39,7 @@ export default function Contact() {
   }
 
   const fieldClass = "w-full px-4 py-3.5 rounded-xl text-sm outline-none transition-all";
-  const fieldStyle = { background: "#111114", border: "1px solid #303037", color: "var(--ink)" };
+  const fieldStyle = { background: "#0f192a", border: "1px solid #303037", color: "var(--ink)" };
 
   return (
     <section id="contact" className="py-24 md:py-32 px-5 md:px-8" style={{ background: "#111114" }}>
@@ -54,12 +54,12 @@ export default function Contact() {
               <p><span style={{ color: "var(--accent)" }}>02</span> · Nous étudions le besoin et le budget</p>
               <p><span style={{ color: "var(--accent)" }}>03</span> · Vous recevez une proposition claire</p>
             </div>
-            <a href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Bonjour Veylan Digital, je souhaite discuter d&apos;un projet.")}`} target="_blank" rel="noopener noreferrer" className="inline-flex mt-8 items-center gap-3 rounded-full px-5 py-3 font-bold text-sm" style={{ background: "#15281d", color: "#86efac", border: "1px solid #244a32" }}>
+            <a href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Bonjour Veylan Digital, je souhaite discuter d&apos;un projet.")}`} target="_blank" rel="noopener noreferrer" className="inline-flex mt-8 items-center gap-3 rounded-full px-5 py-3 font-bold text-sm" style={{ background: "#102b3d", color: "#9bd7ff", border: "1px solid #24506b" }}>
               Discuter sur WhatsApp ↗
             </a>
           </div>
 
-          <form onSubmit={handleSubmit} className="flex flex-col gap-5 p-5 md:p-8 rounded-2xl border" style={{ background: "#17171b", borderColor: "var(--border)" }}>
+          <form onSubmit={handleSubmit} className="flex flex-col gap-5 p-5 md:p-8 rounded-2xl border" style={{ background: "#142137", borderColor: "var(--border)" }}>
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="flex flex-col gap-2">
                 <label htmlFor="name" className="text-xs font-semibold" style={{ color: "#d4d4d8" }}>Nom complet *</label>
@@ -105,7 +105,7 @@ export default function Contact() {
               <textarea id="message" value={message} onChange={e => setMessage(e.target.value)} placeholder="Votre activité, vos objectifs, les fonctionnalités souhaitées..." rows={5} required minLength={10} className={fieldClass} style={{ ...fieldStyle, resize: "vertical" }}/>
             </div>
             <label className="flex items-start gap-3 text-xs leading-relaxed" style={{ color: "var(--muted)" }}>
-              <input type="checkbox" checked={consent} onChange={e => setConsent(e.target.checked)} required className="mt-0.5 accent-yellow-400"/>
+              <input type="checkbox" checked={consent} onChange={e => setConsent(e.target.checked)} required className="mt-0.5 accent-sky-400"/>
               <span>J&apos;accepte que les informations ci-dessus soient utilisées pour répondre à ma demande. Elles ne seront pas utilisées pour m&apos;envoyer des communications marketing sans consentement distinct.</span>
             </label>
             <button type="submit" disabled={status === "loading" || !consent} className="w-full py-4 rounded-full font-extrabold text-sm hover:opacity-90 disabled:opacity-50" style={{ background: "var(--accent)", color: "#111" }}>
