@@ -26,7 +26,7 @@ export default function Portfolio() {
             <div className="text-xs font-bold tracking-[0.22em] mb-5" style={{ color: "var(--accent)" }}>SÉLECTION DE PROJETS</div>
             <h2 className="font-extrabold tracking-tight leading-[1.05]" style={{ fontSize: "clamp(2.3rem, 5vw, 4.5rem)", fontFamily: "Manrope, sans-serif" }}>Du concret.<br/>Pas seulement des idées.</h2>
           </div>
-          <p className="max-w-md leading-relaxed" style={{ color: "var(--muted)" }}>Quelques projets web qui illustrent notre approche de l'expérience utilisateur, du produit et de la conception digitale.</p>
+          <p className="max-w-md leading-relaxed" style={{ color: "var(--muted)" }}>Quelques projets web qui illustrent notre approche de l&apos;expérience utilisateur, du produit et de la conception digitale.</p>
         </div>
         <div className="grid md:grid-cols-2 gap-5">
           {projects.map((project) => (
