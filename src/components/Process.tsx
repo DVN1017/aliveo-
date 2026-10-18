@@ -1,63 +1,28 @@
 const steps = [
-  {
-    num: "01",
-    title: "Analyse de votre site",
-    desc: "On commence par un audit complet — technique, contenu, mobile, vitesse. On cartographie tout ce qui freine votre visibilité sur Google.",
-  },
-  {
-    num: "02",
-    title: "Rapport priorisé",
-    desc: "Vous recevez un rapport clair avec les problèmes classés par impact. Ce qui coûte le plus de trafic en premier, sans jargon inutile.",
-  },
-  {
-    num: "03",
-    title: "Correction et suivi",
-    desc: "On corrige les problèmes identifiés et on suit l'évolution de votre positionnement dans le temps pour mesurer les résultats réels.",
-  },
+  { num: "01", title: "On comprend votre besoin", desc: "Nous échangeons sur votre activité, vos clients, vos objectifs et les fonctionnalités réellement nécessaires." },
+  { num: "02", title: "Vous recevez une proposition claire", desc: "Périmètre, étapes, délais et prix sont précisés avant le démarrage. Pas de surprise sur ce qui est inclus." },
+  { num: "03", title: "Nous concevons et testons", desc: "Le site ou la solution est développé, vérifié sur mobile et ordinateur, puis présenté pour validation." },
+  { num: "04", title: "Vous lancez et faites évoluer", desc: "Après validation et règlement prévu au devis, nous livrons le projet et pouvons organiser le suivi ou la maintenance." },
 ];
 
 export default function Process() {
   return (
-    <section id="process" className="py-24 px-6 md:px-20" style={{ background: "#fff" }}>
-      <div className="max-w-6xl mx-auto">
-
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold mb-6"
-          style={{ background: "#eff6ff", color: "var(--accent)" }}>
-          <span className="w-2 h-2 rounded-full" style={{ background: "var(--accent)" }} />
-          La méthode
+    <section id="methode" className="py-24 md:py-32 px-5 md:px-8" style={{ background: "#0b0b0d" }}>
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-20">
+        <div>
+          <div className="text-xs font-bold tracking-[0.22em] mb-5" style={{ color: "var(--accent)" }}>COMMENT ON TRAVAILLE</div>
+          <h2 className="font-extrabold tracking-tight leading-[1.05] mb-6" style={{ fontSize: "clamp(2.3rem, 5vw, 4.5rem)", fontFamily: "Manrope, sans-serif" }}>Simple.<br/>Transparent.<br/><span style={{ color: "var(--accent)" }}>Structuré.</span></h2>
+          <p className="max-w-md leading-relaxed" style={{ color: "var(--muted)" }}>Un processus clair, du premier échange à la livraison, pour que vous sachiez toujours ce qui se passe et quelle est la prochaine étape.</p>
+          <a href="#contact" className="inline-flex mt-8 font-bold text-sm items-center gap-2" style={{ color: "var(--accent)" }}>Décrire mon projet <span>↗</span></a>
         </div>
-
-        <h2 className="font-black tracking-tight leading-tight mb-4"
-          style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)", color: "var(--ink)" }}>
-          Simple, direct,<br />efficace.
-        </h2>
-
-        <p className="text-base mb-14 max-w-xl leading-relaxed" style={{ color: "var(--muted)" }}>
-          Pas de jargon, pas de promesses vagues. On identifie, on corrige, on mesure.
-        </p>
-
-        <div className="flex flex-col gap-4">
-          {steps.map((step) => (
-            <div key={step.num} className="flex items-start gap-6 p-8 rounded-2xl transition-all hover:shadow-md"
-              style={{ background: "var(--light)", border: "1px solid var(--border)" }}>
-
-              <div className="text-4xl font-black shrink-0" style={{ color: "var(--border)" }}>
-                {step.num}
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold mb-2" style={{ color: "var(--ink)" }}>
-                  {step.title}
-                </h3>
-                <p className="text-sm leading-relaxed" style={{ color: "var(--muted)" }}>
-                  {step.desc}
-                </p>
-              </div>
-
+        <div className="flex flex-col">
+          {steps.map((step, i) => (
+            <div key={step.num} className="grid grid-cols-[56px_1fr] md:grid-cols-[72px_1fr] gap-5 py-7 border-t" style={{ borderColor: "var(--border)" }}>
+              <div className="text-lg font-extrabold" style={{ color: "var(--accent)" }}>{step.num}</div>
+              <div><h3 className="text-lg md:text-xl font-bold mb-2" style={{ fontFamily: "Manrope, sans-serif" }}>{step.title}</h3><p className="text-sm leading-relaxed max-w-xl" style={{ color: "var(--muted)" }}>{step.desc}</p></div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
