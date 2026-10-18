@@ -54,7 +54,7 @@ export default function Contact() {
               <p><span style={{ color: "var(--accent)" }}>02</span> · Nous étudions le besoin et le budget</p>
               <p><span style={{ color: "var(--accent)" }}>03</span> · Vous recevez une proposition claire</p>
             </div>
-            <a href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Bonjour Veylan Digital, je souhaite discuter d'un projet.")}`} target="_blank" rel="noopener noreferrer" className="inline-flex mt-8 items-center gap-3 rounded-full px-5 py-3 font-bold text-sm" style={{ background: "#15281d", color: "#86efac", border: "1px solid #244a32" }}>
+            <a href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Bonjour Veylan Digital, je souhaite discuter d&apos;un projet.")}`} target="_blank" rel="noopener noreferrer" className="inline-flex mt-8 items-center gap-3 rounded-full px-5 py-3 font-bold text-sm" style={{ background: "#15281d", color: "#86efac", border: "1px solid #244a32" }}>
               Discuter sur WhatsApp ↗
             </a>
           </div>
@@ -106,13 +106,13 @@ export default function Contact() {
             </div>
             <label className="flex items-start gap-3 text-xs leading-relaxed" style={{ color: "var(--muted)" }}>
               <input type="checkbox" checked={consent} onChange={e => setConsent(e.target.checked)} required className="mt-0.5 accent-yellow-400"/>
-              <span>J'accepte que les informations ci-dessus soient utilisées pour répondre à ma demande. Elles ne seront pas utilisées pour m'envoyer des communications marketing sans consentement distinct.</span>
+              <span>J&apos;accepte que les informations ci-dessus soient utilisées pour répondre à ma demande. Elles ne seront pas utilisées pour m'envoyer des communications marketing sans consentement distinct.</span>
             </label>
             <button type="submit" disabled={status === "loading" || !consent} className="w-full py-4 rounded-full font-extrabold text-sm hover:opacity-90 disabled:opacity-50" style={{ background: "var(--accent)", color: "#111" }}>
               {status === "loading" ? "Envoi en cours..." : "Envoyer ma demande ↗"}
             </button>
             {status === "success" && <p role="status" className="text-sm text-center" style={{ color: "#86efac" }}>Merci ! Votre demande a bien été envoyée. Nous reviendrons vers vous.</p>}
-            {status === "error" && <p role="alert" className="text-sm text-center" style={{ color: "#fca5a5" }}>L'envoi a échoué. Réessayez ou contactez-nous sur WhatsApp.</p>}
+            {status === "error" && <p role="alert" className="text-sm text-center" style={{ color: "#fca5a5" }}>L&apos;envoi a échoué. Réessayez ou contactez-nous sur WhatsApp.</p>}
             <p className="text-[11px] leading-relaxed" style={{ color: "#777780" }}>Les informations sont utilisées uniquement pour traiter votre demande. Les délais de réponse seront confirmés après réception.</p>
           </form>
         </div>
