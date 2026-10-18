@@ -13,7 +13,7 @@ export default function Nav() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "shadow-lg" : ""}`}
-      style={{ background: "rgba(11,11,13,0.92)", backdropFilter: "blur(16px)", borderBottom: "1px solid var(--border)" }}>
+      style={{ background: "rgba(11,18,32,0.92)", backdropFilter: "blur(16px)", borderBottom: "1px solid var(--border)" }}>
       <div className="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-[76px]">
         <a href="#accueil" aria-label="Veylan Digital, accueil" className="text-xl md:text-2xl font-extrabold tracking-tight" style={{ color: "var(--ink)", fontFamily: "Manrope, sans-serif" }}>
           VEYLAN<span style={{ color: "var(--accent)" }}>.</span>
@@ -32,7 +32,7 @@ export default function Nav() {
         </button>
       </div>
       {menuOpen && (
-        <div className="md:hidden px-6 py-5 flex flex-col gap-5" style={{ background: "#101013", borderTop: "1px solid var(--border)" }}>
+        <div className="md:hidden px-6 py-5 flex flex-col gap-5" style={{ background: "#0f192a", borderTop: "1px solid var(--border)" }}>
           <a href="#services" onClick={() => setMenuOpen(false)} className="text-sm" style={{ color: "var(--muted)" }}>Services</a>
           <a href="#realisations" onClick={() => setMenuOpen(false)} className="text-sm" style={{ color: "var(--muted)" }}>Réalisations</a>
           <a href="#methode" onClick={() => setMenuOpen(false)} className="text-sm" style={{ color: "var(--muted)" }}>Méthode</a>
