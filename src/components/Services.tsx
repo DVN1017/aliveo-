@@ -7,7 +7,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 md:py-32 px-5 md:px-8" style={{ background: "#111114" }}>
+    <section id="services" className="py-24 md:py-32 px-5 md:px-8" style={{ background: "#0f192a" }}>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <div>
@@ -18,11 +18,11 @@ export default function Services() {
         </div>
         <div className="grid sm:grid-cols-2 gap-4">
           {services.map((s) => (
-            <article key={s.num} className="group p-7 md:p-9 rounded-2xl border hover:-translate-y-1" style={{ background: "#17171b", borderColor: "var(--border)" }}>
+            <article key={s.num} className="group p-7 md:p-9 rounded-2xl border hover:-translate-y-1" style={{ background: "#142137", borderColor: "var(--border)" }}>
               <div className="flex items-center justify-between mb-8"><span className="text-sm font-bold" style={{ color: "var(--accent)" }}>{s.num} /</span><span className="text-2xl transition-transform group-hover:translate-x-1" style={{ color: "var(--accent)" }}>↗</span></div>
               <h3 className="text-xl md:text-2xl font-bold mb-3" style={{ fontFamily: "Manrope, sans-serif" }}>{s.title}</h3>
               <p className="text-sm leading-relaxed mb-7" style={{ color: "var(--muted)" }}>{s.desc}</p>
-              <div className="flex flex-wrap gap-2">{s.tags.map((tag) => <span key={tag} className="text-[11px] font-medium px-3 py-1.5 rounded-full border" style={{ color: "#d4d4d8", borderColor: "#34343b", background: "#1e1e23" }}>{tag}</span>)}</div>
+              <div className="flex flex-wrap gap-2">{s.tags.map((tag) => <span key={tag} className="text-[11px] font-medium px-3 py-1.5 rounded-full border" style={{ color: "#d4d4d8", borderColor: "#30445f", background: "#182941" }}>{tag}</span>)}</div>
             </article>
           ))}
         </div>
