@@ -18,7 +18,7 @@ export default function Services() {
         </div>
         <div className="grid sm:grid-cols-2 gap-4">
           {services.map((s) => (
-            <article key={s.num} className="group p-7 md:p-9 rounded-2xl border hover:-translate-y-1" style={{ background: "#142137", borderColor: "var(--border)" }}>
+            <article key={s.num} className="group interactive-card p-7 md:p-9 rounded-2xl border" style={{ background: "#142137", borderColor: "var(--border)" }}>
               <div className="flex items-center justify-between mb-8"><span className="text-sm font-bold" style={{ color: "var(--accent)" }}>{s.num} /</span><span className="text-2xl transition-transform group-hover:translate-x-1" style={{ color: "var(--accent)" }}>↗</span></div>
               <h3 className="text-xl md:text-2xl font-bold mb-3" style={{ fontFamily: "Manrope, sans-serif" }}>{s.title}</h3>
               <p className="text-sm leading-relaxed mb-7" style={{ color: "var(--muted)" }}>{s.desc}</p>
