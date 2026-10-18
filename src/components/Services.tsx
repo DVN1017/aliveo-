@@ -1,68 +1,31 @@
 const services = [
-  {
-    num: "01",
-    title: "Audit SEO",
-    desc: "Analyse complète de votre site pour identifier tout ce qui empêche Google de vous classer correctement. Un rapport clair, priorisé, immédiatement actionnable.",
-    tags: ["Crawl technique", "Analyse mobile", "Mots-clés", "Backlinks"],
-  },
-  {
-    num: "02",
-    title: "Optimisation technique",
-    desc: "Correction des problèmes identifiés : vitesse de chargement, affichage mobile, balises, structure interne. Du concret, pas de la théorie.",
-    tags: ["Core Web Vitals", "Mobile-first", "Balises meta", "Schema markup"],
-  },
+  { num: "01", title: "Création de sites web", desc: "Des sites professionnels, rapides et adaptés au mobile pour présenter vos services, renforcer votre crédibilité et faciliter les demandes de clients.", tags: ["Site vitrine", "Refonte", "Responsive", "Formulaires"] },
+  { num: "02", title: "SEO & visibilité Google", desc: "Des bases techniques solides, une structure claire et des optimisations utiles pour aider les moteurs de recherche à comprendre votre site.", tags: ["Audit SEO", "SEO technique", "Contenu", "Search Console"] },
+  { num: "03", title: "Automatisation", desc: "Des flux simples pour réduire les tâches répétitives, mieux suivre les prospects et gagner du temps dans vos opérations quotidiennes.", tags: ["Formulaires", "Suivi prospects", "Workflows", "Intégrations"] },
+  { num: "04", title: "Stratégie digitale", desc: "Un accompagnement concret pour clarifier votre présence en ligne, mieux présenter votre offre et relier vos contenus à vos objectifs commerciaux.", tags: ["Positionnement", "Parcours client", "Contenu", "Conversion"] },
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 px-6 md:px-20" style={{ background: "var(--light)" }}>
-      <div className="max-w-6xl mx-auto">
-
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold mb-6"
-          style={{ background: "#eff6ff", color: "var(--accent)" }}>
-          <span className="w-2 h-2 rounded-full" style={{ background: "var(--accent)" }} />
-          Ce qu&apos;on fait
+    <section id="services" className="py-24 md:py-32 px-5 md:px-8" style={{ background: "#111114" }}>
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+          <div>
+            <div className="text-xs font-bold tracking-[0.22em] mb-5" style={{ color: "var(--accent)" }}>NOS EXPERTISES</div>
+            <h2 className="font-extrabold tracking-tight leading-[1.05]" style={{ fontSize: "clamp(2.3rem, 5vw, 4.5rem)", fontFamily: "Manrope, sans-serif" }}>Les bons outils.<br/>Les bons objectifs.</h2>
+          </div>
+          <p className="max-w-md leading-relaxed" style={{ color: "var(--muted)" }}>Des services complémentaires pour construire une présence digitale cohérente, utile et pensée pour votre entreprise.</p>
         </div>
-
-        <h2 className="font-black tracking-tight leading-tight mb-4"
-          style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)", color: "var(--ink)" }}>
-          Deux services,<br />un seul objectif.
-        </h2>
-
-        <p className="text-base mb-14 max-w-xl leading-relaxed" style={{ color: "var(--muted)" }}>
-          Chaque intervention est ciblée, concrète et orientée résultats.
-        </p>
-
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-4">
           {services.map((s) => (
-            <div key={s.num} className="p-8 md:p-10 rounded-2xl transition-all hover:-translate-y-1 hover:shadow-lg"
-              style={{ background: "#fff", border: "1px solid var(--border)" }}>
-
-              <div className="text-5xl font-black mb-6" style={{ color: "var(--border)" }}>
-                {s.num}
-              </div>
-
-              <h3 className="text-2xl font-bold mb-3" style={{ color: "var(--ink)" }}>
-                {s.title}
-              </h3>
-
-              <p className="text-sm leading-relaxed mb-6" style={{ color: "var(--muted)" }}>
-                {s.desc}
-              </p>
-
-              <div className="flex flex-wrap gap-2">
-                {s.tags.map((tag) => (
-                  <span key={tag} className="text-xs font-semibold px-3 py-1.5 rounded-full"
-                    style={{ background: "#eff6ff", color: "var(--accent)" }}>
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-            </div>
+            <article key={s.num} className="group p-7 md:p-9 rounded-2xl border hover:-translate-y-1" style={{ background: "#17171b", borderColor: "var(--border)" }}>
+              <div className="flex items-center justify-between mb-8"><span className="text-sm font-bold" style={{ color: "var(--accent)" }}>{s.num} /</span><span className="text-2xl transition-transform group-hover:translate-x-1" style={{ color: "var(--accent)" }}>↗</span></div>
+              <h3 className="text-xl md:text-2xl font-bold mb-3" style={{ fontFamily: "Manrope, sans-serif" }}>{s.title}</h3>
+              <p className="text-sm leading-relaxed mb-7" style={{ color: "var(--muted)" }}>{s.desc}</p>
+              <div className="flex flex-wrap gap-2">{s.tags.map((tag) => <span key={tag} className="text-[11px] font-medium px-3 py-1.5 rounded-full border" style={{ color: "#d4d4d8", borderColor: "#34343b", background: "#1e1e23" }}>{tag}</span>)}</div>
+            </article>
           ))}
         </div>
-
       </div>
     </section>
   );
