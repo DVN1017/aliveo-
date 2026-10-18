@@ -15,7 +15,7 @@ export default function Process() {
           <p className="max-w-md leading-relaxed" style={{ color: "var(--muted)" }}>Un processus clair, du premier échange à la livraison, pour que vous sachiez toujours ce qui se passe et quelle est la prochaine étape.</p>
           <a href="#contact" className="inline-flex mt-8 font-bold text-sm items-center gap-2" style={{ color: "var(--accent)" }}>Décrire mon projet <span>↗</span></a>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col reveal-up">
           {steps.map((step) => (
             <div key={step.num} className="grid grid-cols-[56px_1fr] md:grid-cols-[72px_1fr] gap-5 py-7 border-t" style={{ borderColor: "var(--border)" }}>
               <div className="text-lg font-extrabold" style={{ color: "var(--accent)" }}>{step.num}</div>
