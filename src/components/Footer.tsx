@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="py-10 px-5 md:px-8 border-t" style={{ background: "#080809", borderColor: "var(--border)" }}>
+    <footer className="py-10 px-5 md:px-8 border-t" style={{ background: "#080f1b", borderColor: "var(--border)" }}>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <a href="#accueil" className="text-xl font-extrabold tracking-tight" style={{ color: "var(--ink)", fontFamily: "Manrope, sans-serif" }}>
           VEYLAN<span style={{ color: "var(--accent)" }}>.</span>
