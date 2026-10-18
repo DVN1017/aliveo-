@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --bg: #0b0b0d;
-  --ink: #f7f7f5;
-  --muted: #a1a1aa;
-  --accent: #facc15;
-  --light: #141417;
-  --border: #29292f;
+  --bg: #0b1220;
+  --ink: #f4f7fb;
+  --muted: #aab6c8;
+  --accent: #78bdf2;
+  --light: #111b2d;
+  --border: #26364d;
 }
 
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
@@ -19,7 +19,7 @@ body {
   overflow-x: hidden;
 }
 
-::selection { background: #facc15; color: #111; }
+::selection { background: #78bdf2; color: #0b1220; }
 a, button, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 button, a { transition: all 180ms ease; }
 input:focus, select:focus, textarea:focus {
