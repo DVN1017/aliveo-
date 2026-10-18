@@ -7,7 +7,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <section id="methode" className="py-24 md:py-32 px-5 md:px-8" style={{ background: "#0b0b0d" }}>
+    <section id="methode" className="py-24 md:py-32 px-5 md:px-8" style={{ background: "#0b1220" }}>
       <div className="max-w-7xl mx-auto grid lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-20">
         <div>
           <div className="text-xs font-bold tracking-[0.22em] mb-5" style={{ color: "var(--accent)" }}>COMMENT ON TRAVAILLE</div>
