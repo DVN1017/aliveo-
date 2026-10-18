@@ -28,9 +28,12 @@ export default function Hero() {
             <span>✓ SEO dès la conception</span>
           </div>
         </div>
-        <div className="relative max-w-xl w-full mx-auto">
-          <div className="absolute -inset-4 rounded-[2rem] blur-2xl" style={{ background: "rgba(250,204,21,0.08)" }} />
-          <div className="relative rounded-[1.75rem] border p-5 md:p-7 overflow-hidden" style={{ background: "linear-gradient(145deg, #1b1b20, #101013)", borderColor: "#33333a" }}>
+        <div className="relative max-w-xl w-full mx-auto pt-10 md:pt-16">
+          <div className="absolute inset-x-8 top-0 h-64 md:h-80 overflow-hidden rounded-[2rem] pointer-events-none">
+            <img src="/veylan-portrait.jpg" alt="" aria-hidden="true" className="h-full w-full object-cover object-[center_28%] opacity-70" style={{ maskImage: "linear-gradient(to bottom, black 30%, transparent 100%)", WebkitMaskImage: "linear-gradient(to bottom, black 30%, transparent 100%)" }} />
+          </div>
+          <div className="absolute -inset-4 rounded-[2rem] blur-2xl pointer-events-none" style={{ background: "rgba(250,204,21,0.08)" }} />
+          <div className="relative rounded-[1.75rem] border p-5 md:p-7 overflow-hidden mt-20 md:mt-28" style={{ background: "linear-gradient(145deg, rgba(27,27,32,0.94), rgba(16,16,19,0.97))", borderColor: "#33333a", backdropFilter: "blur(8px)" } }>
             <div className="flex items-center justify-between mb-8">
               <div className="flex gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-red-400/70"/><span className="w-2.5 h-2.5 rounded-full bg-yellow-300/70"/><span className="w-2.5 h-2.5 rounded-full bg-green-400/70"/></div>
               <span className="text-[10px] tracking-[0.2em]" style={{ color: "var(--muted)" }}>VEYLAN DIGITAL / STUDIO</span>
@@ -48,7 +51,6 @@ export default function Hero() {
               <span className="text-xs font-bold" style={{ color: "var(--accent)" }}>VD / 01</span>
             </div>
           </div>
-          <p className="text-center text-xs mt-4" style={{ color: "#777780" }}>Visuel de marque temporaire — le portrait réel de Veylan sera intégré dès que son fichier sera disponible.</p>
         </div>
       </div>
     </section>
