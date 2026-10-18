@@ -16,7 +16,7 @@ export default function Process() {
           <a href="#contact" className="inline-flex mt-8 font-bold text-sm items-center gap-2" style={{ color: "var(--accent)" }}>Décrire mon projet <span>↗</span></a>
         </div>
         <div className="flex flex-col">
-          {steps.map((step, i) => (
+          {steps.map((step) => (
             <div key={step.num} className="grid grid-cols-[56px_1fr] md:grid-cols-[72px_1fr] gap-5 py-7 border-t" style={{ borderColor: "var(--border)" }}>
               <div className="text-lg font-extrabold" style={{ color: "var(--accent)" }}>{step.num}</div>
               <div><h3 className="text-lg md:text-xl font-bold mb-2" style={{ fontFamily: "Manrope, sans-serif" }}>{step.title}</h3><p className="text-sm leading-relaxed max-w-xl" style={{ color: "var(--muted)" }}>{step.desc}</p></div>
