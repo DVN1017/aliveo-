@@ -106,7 +106,7 @@ export default function Contact() {
             </div>
             <label className="flex items-start gap-3 text-xs leading-relaxed" style={{ color: "var(--muted)" }}>
               <input type="checkbox" checked={consent} onChange={e => setConsent(e.target.checked)} required className="mt-0.5 accent-yellow-400"/>
-              <span>J&apos;accepte que les informations ci-dessus soient utilisées pour répondre à ma demande. Elles ne seront pas utilisées pour m'envoyer des communications marketing sans consentement distinct.</span>
+              <span>J&apos;accepte que les informations ci-dessus soient utilisées pour répondre à ma demande. Elles ne seront pas utilisées pour m&apos;envoyer des communications marketing sans consentement distinct.</span>
             </label>
             <button type="submit" disabled={status === "loading" || !consent} className="w-full py-4 rounded-full font-extrabold text-sm hover:opacity-90 disabled:opacity-50" style={{ background: "var(--accent)", color: "#111" }}>
               {status === "loading" ? "Envoi en cours..." : "Envoyer ma demande ↗"}
