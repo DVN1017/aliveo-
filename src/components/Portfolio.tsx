@@ -30,7 +30,7 @@ export default function Portfolio() {
         </div>
         <div className="grid md:grid-cols-2 gap-5">
           {projects.map((project) => (
-            <article key={project.name} className="rounded-2xl overflow-hidden border group" style={{ background: "#142137", borderColor: "var(--border)" }}>
+            <article key={project.name} className="interactive-card rounded-2xl overflow-hidden border group" style={{ background: "#142137", borderColor: "var(--border)" }}>
               <div className="p-6 md:p-8 min-h-48 flex flex-col justify-between" style={{ background: "radial-gradient(ellipse at top right, rgba(120,189,242,.16), transparent 55%), #111b2d" }}>
                 <div className="flex justify-between items-start"><span className="text-xs tracking-[0.2em]" style={{ color: "var(--accent)" }}>{project.number} / PROJET</span><span className="text-2xl" style={{ color: "var(--accent)" }}>↗</span></div>
                 <div className="text-4xl md:text-5xl font-extrabold tracking-tight mt-12" style={{ fontFamily: "Manrope, sans-serif" }}>{project.name}<span style={{ color: "var(--accent)" }}>.</span></div>
