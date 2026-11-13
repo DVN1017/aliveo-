@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Veylan Digital | Formations, ebooks et outils numériques",
   description:
     "Découvrez les formations, ebooks et outils numériques Veylan Digital pour apprendre, créer, entreprendre et progresser en Afrique francophone et à l’international.",
-  metadataBase: new URL("https://aliveo.vercel.app"),
+  metadataBase: new URL("https://veylan-digital.vercel.app"),
   openGraph: {
     title: "Veylan Digital | Technology. Knowledge. Growth.",
     description:
