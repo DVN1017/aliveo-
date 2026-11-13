@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Veylan Digital — Création web, SEO & automatisation",
+  title: "Veylan Digital | Formations, ebooks et outils numériques",
   description:
-    "Veylan Digital accompagne les entreprises avec des sites web professionnels, le référencement naturel et des solutions digitales utiles.",
+    "Découvrez les formations, ebooks et outils numériques Veylan Digital pour apprendre, créer, entreprendre et progresser en Afrique francophone et à l’international.",
   metadataBase: new URL("https://aliveo.vercel.app"),
   openGraph: {
-    title: "Veylan Digital — Création web, SEO & automatisation",
+    title: "Veylan Digital | Technology. Knowledge. Growth.",
     description:
-      "Des solutions digitales pensées pour présenter votre activité, renforcer votre visibilité et générer des demandes qualifiées.",
+      "Des ressources numériques pour apprendre, créer et évoluer.",
     type: "website",
     locale: "fr_FR",
   },
