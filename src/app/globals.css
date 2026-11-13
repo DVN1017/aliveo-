@@ -1,33 +1,31 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --bg: #0b1220;
-  --ink: #f4f7fb;
-  --muted: #aab6c8;
-  --accent: #78bdf2;
-  --light: #111b2d;
-  --border: #26364d;
+  --bg: #0b0c10;
+  --ink: #f7f5ef;
+  --muted: #a8a39a;
+  --accent: #d7b56d;
+  --light: #17191f;
+  --border: rgba(255,255,255,.1);
 }
 
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
-
 body {
+  margin: 0;
   background: var(--bg);
   color: var(--ink);
   font-family: 'DM Sans', sans-serif;
   overflow-x: hidden;
 }
-
-::selection { background: #78bdf2; color: #0b1220; }
+::selection { background: #d7b56d; color: #111318; }
 a, button, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 button, a { transition: all 180ms ease; }
 input:focus, select:focus, textarea:focus {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
-
-/* Veylan motion system */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 @keyframes veylan-rise {
   from { opacity: 0; transform: translateY(22px); }
   to { opacity: 1; transform: translateY(0); }
@@ -36,18 +34,8 @@ input:focus, select:focus, textarea:focus {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-9px); }
 }
-@keyframes veylan-glow {
-  0%, 100% { opacity: .45; }
-  50% { opacity: .85; }
-}
 .reveal-up { animation: veylan-rise .8s cubic-bezier(.2,.7,.2,1) both; }
-.reveal-delay-1 { animation-delay: .12s; }
-.reveal-delay-2 { animation-delay: .24s; }
 .float-gently { animation: veylan-float 7s ease-in-out infinite; }
-.soft-glow { animation: veylan-glow 6s ease-in-out infinite; }
-.interactive-card { transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease; }
-.interactive-card:hover { transform: translateY(-5px); border-color: rgba(120,189,242,.6); box-shadow: 0 18px 48px rgba(0,0,0,.18); }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
